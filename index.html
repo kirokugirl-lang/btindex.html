@@ -92,7 +92,13 @@ button {
 <body>
 
 <h1>ボックスティッシュ計算ツール</h1>
-
+<div style="font-size:13px; line-height:1.7; text-align:left; margin:12px auto; padding:10px 14px; max-width:600px; background:#f5f5f5; border-radius:8px;">
+  <strong>使い方</strong>
+  <p style="margin:4px 0;">① 製品①と製品②の組数・パック数・サイズ・価格を入力します。</p>
+  <p style="margin:4px 0;">②「結果を表示」ボタンを押します。</p>
+  <p style="margin:4px 0;">③ 総面積と1円あたりの面積を比較します。</p>
+  <p style="margin:6px 0 0; color:#666;">※一般的な2枚重ねのティッシュを対象としています。</p>
+</div>
 <h2>製品①</h2>
 <label class="row-gray"><span>組数</span><input type="number" id="set1" /></label>
 <label class="row-white"><span>パック数</span><input type="number" id="pack1" /></label>
@@ -213,17 +219,7 @@ function saveData() {
   <h2>このツールでできること</h2>
   <p>2つのボックスティッシュ製品を比較し、価格に対する総面積から、どちらの商品がお得かを確認できるツールです。</p>
 
-  <h2>使い方</h2>
-  <p>製品①と製品②について、それぞれ以下の項目を入力します。</p>
-  <ul>
-    <li>組数</li>
-    <li>パック数</li>
-    <li>横幅（cm）</li>
-    <li>縦幅（cm）</li>
-    <li>価格（円）</li>
-  </ul>
-  <p>入力後、「結果を表示」ボタンを押すと、総面積と1円あたりの面積が表示されます。</p>
-
+  
   <h2>計算方法</h2>
   <p>総面積 ＝ 組数 × パック数 × 横幅 × 縦幅 × 2</p>
   <p>1円あたりの面積 ＝ 総面積 ÷ 価格</p>
